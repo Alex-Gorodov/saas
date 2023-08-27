@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/saas/dashboard/static/css/main.6941b10f.css",
-    "main.js": "/saas/dashboard/static/js/main.e1b82bad.js",
-    "index.html": "/saas/dashboard/index.html",
-    "static/media/search.svg": "/saas/dashboard/static/media/search.292690cde527827e6c9b.svg",
-    "main.6941b10f.css.map": "/saas/dashboard/static/css/main.6941b10f.css.map",
-    "main.e1b82bad.js.map": "/saas/dashboard/static/js/main.e1b82bad.js.map"
+    "main.css": "/saas/static/css/main.25b77587.css",
+    "main.js": "/saas/static/js/main.e1b82bad.js",
+    "index.html": "/saas/index.html",
+    "static/media/search.svg": "/saas/static/media/search.292690cde527827e6c9b.svg",
+    "main.25b77587.css.map": "/saas/static/css/main.25b77587.css.map",
+    "main.e1b82bad.js.map": "/saas/static/js/main.e1b82bad.js.map"
   },
   "entrypoints": [
-    "static/css/main.6941b10f.css",
+    "static/css/main.25b77587.css",
     "static/js/main.e1b82bad.js"
   ]
 }
