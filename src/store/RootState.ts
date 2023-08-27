@@ -1,7 +1,7 @@
-import { combineReducers } from 'redux';
 import { authReducer } from './auth/auth-reducer';
 import { menuReducer } from './page/page-reducer';
 import { calendarReducer } from './calendar/calendar-reducer';
+import { combineReducers } from 'redux';
 
 export const rootReducer = combineReducers({
   auth: authReducer,

@@ -2,7 +2,7 @@ import { ChatIcon, ContactsIcon, DashboardIcon, DealsIcon, EmailIcon, SettingsIc
 
 export enum AppRoute {
   Root = '/',
-  Dashboard = 'saas/dashboard',
+  Dashboard = '/saas',
   Tasks = 'saas/tasks',
   Email = 'saas/email',
   Contacts = 'saas/contacts',
