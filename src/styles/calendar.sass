@@ -1,0 +1,33 @@
+.calendar
+  padding: 16px 24px
+  @media (max-width: $mobile-only)
+    padding: 12px
+  &__wrapper
+    @media (max-width: $mobile-only)
+      position: sticky
+      top: 60px
+      background-color: $white
+    &::after
+      display: block
+      width: 100%
+      height: 1px
+      background-color: $border-gray
+      content: ""
+
+  &__statusbar
+    display: block
+    width: 100%
+    height: 4px
+    border-radius: 3px
+    background-color: $border-gray
+    transition: 0.3s
+    &--completed
+      background-color: $main-green
+  &__list
+    @include list-reset
+    display: flex
+    gap: 60px
+    justify-content: space-between
+    @media (max-width: $mobile-only)
+      gap: 20px
+      padding: 0

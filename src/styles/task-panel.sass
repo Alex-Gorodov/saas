@@ -1,0 +1,38 @@
+.task-panel
+  display: flex
+  gap: 8px
+  align-items: center
+  justify-self: end
+  &__item
+    padding: 0
+    width: 16px
+    height: 16px
+    border: none
+    background-color: transparent
+    cursor: pointer
+    transition: 0.3s
+    &--status-btn
+      width: 12px
+      height: 12px
+      border: 2px solid
+      border-radius: 50%
+      &[data-button-type='Active']
+        border-color: $main-orange
+        &:hover
+          background-color: $main-orange
+      &[data-button-type='Ended']
+        border-color: $main-red
+        &:hover
+          background-color: $main-red
+      &[data-button-type='Completed']
+        border-color: $main-green
+        &:hover
+          background-color: $main-green
+    &:nth-child(2n)
+      margin-right: 12px
+    &--edit,
+    &--remove
+      color: $light-gray
+    &--edit:hover,
+    &--remove:hover
+      color: $gray

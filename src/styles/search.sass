@@ -1,0 +1,37 @@
+.search
+  position: fixed
+  top: 0
+  width: 100vw
+  transition: 0.3s
+  z-index: 2
+
+  &__input
+    position: relative
+    width: 100%
+    border: none
+    border-bottom: 1px solid $border-gray
+    padding: 22.5px 36px
+    padding-left: 68px
+    font-size: 12px
+    &::placeholder
+      color: $gray
+      font-family: $main-font
+    &:focus-visible
+      outline: none
+    @media (max-width: $mobile-only)
+      padding-left: 32px
+
+  &__icon
+    position: absolute
+    top: 20px
+    left: 40px
+    display: block
+    width: 20px
+    height: 20px
+    background-image: url("../images/icons/search.svg")
+    background-size: initial
+    background-position: center
+    background-repeat: no-repeat
+    @media (max-width: $mobile-only)
+      left: 10px
+

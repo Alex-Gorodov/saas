@@ -1,0 +1,32 @@
+@import "./variables"
+@import "./layout"
+@import "./section"
+@import "./dashboard"
+@import "./user"
+@import "./search"
+@import "./tasks"
+@import "./task-item"
+@import "./task-panel"
+@import "./calendar"
+@import "./graph"
+@import "./day"
+@import "./not-exist"
+
+*,
+*::after,
+*::before
+  box-sizing: border-box
+
+html
+  height: 100%
+  padding: 0
+  margin: 0
+
+body
+  display: flex
+  min-height: 100%
+  flex-direction: column
+  margin: 0
+  padding: 0
+  background-color: $background-color
+  font-family: $main-font

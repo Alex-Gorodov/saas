@@ -1,0 +1,129 @@
+.menu
+  position: fixed
+  display: flex
+  flex-direction: column
+  transition: 0.3s
+  background-color: $white
+  min-height: 100vh
+  box-shadow: 6px 0 18px 0 lighten($black, 94%)
+  z-index: 10
+  @media (max-width: $mobile-only)
+    box-shadow: none
+    background-color: transparent
+    justify-content: space-between
+    pointer-events: none
+  &__logo
+    font-size: 18px
+    font-weight: 500
+    margin: 0
+    margin-bottom: 40px
+    @media (max-width: $mobile-only)
+      display: none
+    &-link
+      display: block
+      margin: 16px 12px
+      text-decoration: none
+      color: $theme-color
+      transition: 0.3s
+    &::after
+      content: ""
+      display: block
+      width: 100%
+      height: 1px
+      background-color: $border-gray
+
+  &__user
+    margin-bottom: 40px
+    @media (max-width: $mobile-only)
+      max-width: 80px
+      background-color: $white
+      margin-left: 0 !important
+      padding: 6.5px
+      margin-bottom: 0
+
+
+  &__list
+    @include list-reset
+    position: relative
+    gap: 25px
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+    color: $dark-blue
+    font-size: 13px
+    @media (max-width: $mobile-only)
+      padding: 20px 0
+      flex-direction: row
+      background-color: $white
+      width: 100vw
+      align-items: center
+      gap: 0px
+      justify-content: space-around
+      pointer-events: all
+    &::after
+      position: absolute
+      bottom: 44px
+      left: 0
+      content: ""
+      display: block
+      width: 100%
+      height: 1px
+      background-color: $border-gray
+      @media (max-width: $mobile-only)
+        display: none
+  &__item
+    padding: 0 24px
+    &:last-child
+      padding: 0
+      & .menu__link
+        margin: 10px 22px
+        @media (max-width: $mobile-only)
+          margin: 0
+    @media (max-width: $mobile-only)
+      padding: 0
+
+  &__link
+    display: flex
+    align-items: center
+    gap: 14px
+    line-height: 15px
+    text-decoration: none
+    color: $dark-blue
+    transition: 0.3s
+    & svg
+      stroke: $light-gray
+      transition: 0.3s
+    &:hover
+      color: $theme-color
+      & svg
+        stroke: $theme-color
+    &--active
+      color: $theme-color
+      & svg
+        stroke: $theme-color
+
+  &__toggler
+    display: flex
+    gap: 14px
+    color: $light-gray
+    background-color: transparent
+    border: none
+    cursor: pointer
+    transition: 0.3s
+    padding: 16px 27px
+    align-items: center
+    line-height: 14px
+      
+    & svg
+      fill: $light-gray
+      transition: 0.3s
+    &:hover
+      color: $theme-color
+      & svg
+        fill: $theme-color
+
+    &-wrapper
+      margin-top: auto
+      align-items: center
+      @media (max-width: $mobile-only)
+        display: none
