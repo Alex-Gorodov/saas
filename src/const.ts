@@ -11,6 +11,8 @@ export enum AppRoute {
   Settings = 'saas/settings',
 }
 
+export const SAFARI_MOBILE_BOTTOM_MENU_HEIGHT = 44;
+
 export const MENU_WIDTH = [
   '256px', '68px'
 ]
